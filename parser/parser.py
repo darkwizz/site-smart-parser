@@ -14,5 +14,10 @@ def get_html_search_root(link):
     soup = BeautifulSoup(html)
     return soup.html.body
 
+
+def get_found_elements(root, keywords_filename):
+    keywords = file(keywords_filename)
+    pass
+
 if __name__ == '__main__':
     print get_html_search_root('http://finance.i.ua')
